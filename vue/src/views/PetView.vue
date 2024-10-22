@@ -6,7 +6,7 @@
                 <img v-for="image in this.petImages" v-bind:key="image.id" v-bind:src="image.name"/>
             </div>
             <p><strong><em>Gender:</em></strong> {{ this.updatedPet.gender }}</p>
-            <p><strong><em>Weight:</em></strong> {{ this.updatedPet.weight }}</p>
+            <p><strong><em>Weight:</em></strong> {{ this.updatedPet.weight }} pounds</p>
             <p><strong><em>Color:</em></strong> {{ this.updatedPet.color }}</p>
             <p><strong><em>Age:</em></strong> {{ Math.floor(daysBetween / 365) }}Yrs. {{ Math.floor((daysBetween / 30.436875) - (Math.floor(daysBetween / 365)*12)) }}Mo.</p>
             <p><strong><em>Species:</em></strong> {{ this.updatedPet.species }}</p>
