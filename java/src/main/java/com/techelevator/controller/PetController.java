@@ -34,14 +34,13 @@ public class PetController {
 
     @GetMapping(path="/pet/{id}")
     public Pet getPetById(@PathVariable int id) {
-        Pet pet = petDao.getPetById(id);
-        return pet;
+        return petDao.getPetById(id);
     }
 
     @PutMapping(path="/updatePet/{id}")
     public void updatePet(@PathVariable int id, @RequestBody Pet pet) {
         pet.setPetId(id);
-        petDao.updatePets(pet);
+        petDao.updatePet(pet);
     }
 
     @ResponseStatus(HttpStatus.CREATED)

@@ -104,7 +104,7 @@ export default {
       }, 
       submit() {
         petService
-          .updatePetStatus(this.updatedPet)
+          .updatePetInfo(this.updatedPet)
           .then((response) => {
             if (response.status >= 200) {
                 window.alert("Pet updated successfully");

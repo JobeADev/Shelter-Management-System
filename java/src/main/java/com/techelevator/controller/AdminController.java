@@ -6,6 +6,7 @@ import com.techelevator.dao.PendingUserDao;
 import com.techelevator.dao.PetDao;
 import com.techelevator.model.AdoptionApp;
 import com.techelevator.model.PendingUser;
+import com.techelevator.model.Pet;
 import com.techelevator.model.dto.AdoptAppStatusChangeDto;
 import com.techelevator.model.dto.PetStatusChangeDto;
 import com.techelevator.model.dto.StatusChangeDto;
@@ -57,6 +58,9 @@ public class AdminController {
 
     @PutMapping(path="/updatePet")
     public void updatePet(@Valid @RequestBody PetStatusChangeDto status) {
+//        Pet pet = petDao.getPetById(status.getPetId());
+//        pet.setStatus(status.getStatusId());
+//        petDao.updatePet(pet);
         petDao.updatePetStatus(status);
     }
 }

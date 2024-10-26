@@ -12,7 +12,7 @@ public interface PetDao {
     List<Pet> getPets();
     List<Pet> getMostRecentPets();
     int getLastPetId();
-    void updatePets(Pet pet);
+    void updatePet(Pet pet);
     void updatePetStatus(PetStatusChangeDto status);
     Pet addPet(AddPetDto pet);
     Owner addOwner(OwnerInfoDto owner);

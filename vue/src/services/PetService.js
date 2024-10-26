@@ -26,8 +26,12 @@ export default {
     return http.get(`/pet/${petId}`)
   },
 
-  updatePetStatus(status) {
+  updatePetInfo(status) {
     return http.put(`/updatePet/${status.petId}`, status)
+  },
+
+  updatePetStatus(status) {
+    return http.put(`/updatePet`, status)
   },
 
   addOwner(owner) {
