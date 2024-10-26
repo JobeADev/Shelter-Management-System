@@ -77,3 +77,8 @@ The Shelter Management System contains many feature such as:
 (completion of password change will prevent further appearance of welcome message and prompt.)
 
 ![SMS 20](https://github.com/user-attachments/assets/d1143626-a34d-40a0-ab35-28a84977d9b3)
+
+### When an adoption application is approved, the admin will be notified of the success, and the animal selected for the application will no longer on the main page nor the availible animals page.
+
+![SMS 21](https://github.com/user-attachments/assets/82779fb7-e851-47d4-bfa8-67f87c73a0f8)
+
